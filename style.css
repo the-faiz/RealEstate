@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&family=Roboto+Condensed&family=Young+Serif&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Young Serif', serif; */
+
+*{
+    margin:0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+
+/* Navigation Bar Css */
+nav{
+    display: flex;
+    /* background: linear-gradient(to bottom, #87CEEB, #1E90FF); */
+    justify-content: center;
+    align-items: center;
+}
+
+nav h3{
+    margin: 10px 20px;
+}
+
+nav div{
+    display: flex;
+    margin-left: 10px;
+}
+
+nav div li{
+    list-style: none;
+    margin-left: 10px;
+    padding:10px 10px;
+}
+
+#nav_buttons{
+   margin-left: auto;
+   padding:10px;
+}
+
+nav button{
+    border-radius: 10px;
+    margin-left:30px;
+    padding:10px 10px;
+    background-color: black;
+    color:white;
+    font-weight: bolder;
+}
+
+.menu{
+    display: none;
+    margin-left:10px;
+}
+
+@media (max-width:850px){
+    nav li{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    #nav_buttons button{
+        font-size: 0.7rem;
+        height:80%;
+    }
+}
+
+/* Navigation css ends  */
+
+
+/* Options CSS */
+.options{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    /* padding:10px;     */
+}
+
+
+.options li{
+    padding:10px;
+    list-style: none;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+
+.options li:hover{  
+    color: green;
+    cursor: pointer;
+}
+
+@media (max-width:650px){
+    .options li{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:450px){
+    .options li{
+        display: none;
+    }
+}
+
+/* Option Css ends  */
+
+
+/* First Page Css */
+.fPage{
+    display:flex;
+    height: 60vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.left_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width:80%;
+    /* border: 2px solid red; */
+}
+
+.left_item h1{
+    padding:10px 10px;
+    margin-bottom: 0px;
+    font-family: 'Young Serif', serif;
+    font-weight: bolder;
+    color: #0dcaf0;
+}
+
+.left_item span{
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.SearchBox{
+    /* border:2px solid red; */
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.SearchBox input{
+    width: 60%;
+    height: 100%;
+    font-size: 1.2rem;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 5px;
+
+
+}
+
+.Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+
+
+@media (max-width:700px){
+    .SearchBox button{
+        font-size: 0.8rem;
+        width:30%;
+    }
+    .SearchBox input{
+        /* font-size: 0.8rem; */
+        width:80%;
+    }
+    .filter{
+        display: none;
+    }
+}
+
+/* First Page Css ends  */
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width:100vw;
+    display:grid;
+    gap:var(--size-3);
+    grid-auto-flow:column;
+    overflow-x:auto;
+    overscroll-behavior-inline: contain;
+    grid-gap: 10px;
+}
+
+
+.card{
+    margin: 20px 20px;
+}
+
+/* Carousel CSS */
+.car{
+    width:100vw;
+    height:50vh;
+    margin-top:50px;
+}
+
+.car>h1{
+    margin-left:30px;
+}
+
+.carousel-item{
+    height:32rem;
+    background-color: #000;
+    color:white;
+    position: relative;
+    width:100vw;
+    background-position: center;
+    background-size: cover ;
+}
+.container{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:50px;
+}
+
+.overlay-image{
+    position: absolute;
+    bottom:0;
+    top:0;
+    right:0;
+    left:0;
+    background-position: center;
+    background-size:cover;
+    opacity: 0.5;
+
+}
+
+/* Carousel css ends  */
+
+.review{
+    margin-top:250px;
+    display: flex;
+    color:green;
+    /* flex-wrap: wrap; */
+}
+.carousel2{
+    width:50vw;
+}
+.review h2{
+    margin:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:3rem;
+}
+
+.rev{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin:10px 20px;
+    color: black;
+    border-right: 2px solid black;
+    overflow-y:auto;
+    
+}
+
+.rev img{
+    border-radius: 1000px;
+
+}
+
+.rev span{
+    margin-left:100px;
+    font-size: 1.2rem;
+}
+
+.rev p{
+    margin: 20px;
+}
+
+
+.contact{
+    display:flex;
+    width:50vw;
+    flex-direction: column;
+    margin:20px 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color:green;
+  }
+
+  .contact h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:3rem;
+  }
+  .contactForm{
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+  }
+
+  .contactForm label, .contactForm input{
+    margin:10px 0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+  }
+
+  #message{
+    height:30vh;
+  }
+
+  .contact input[type='submit']{
+    background-color: black;
+    color:white;
+    width:10vw;
+    min-width: 80px;
+    padding:5px 5px;
+    cursor: pointer;
+  }
+
+  .contact input[type='submit']:hover{
+    color:black;
+    background-color: white;
+    transition: 1s;
+  }
+
+  @media (max-width:900px){
+    .review{
+        flex-wrap: wrap;
+    }
+    .carousel2{
+        width:100vw;
+    }
+    .contact{
+        display:flex;
+        width:100vw;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+
+  /* Footer Code  */
+  /* Apply your styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+footer p{
+    margin-left:20px;
+}
+
+/* Additional styles for font awesome icons if used */
+
+
